@@ -1,0 +1,15 @@
+@use "@app/styles/_mixins" as *;
+
+.something-went-wrong {
+  @include flex(column);
+  gap: 24px;
+  .something-went-wrong-description {
+    color: var(--color-text-med-light);
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  .something-went-wrong-button {
+    @include flex(row);
+    gap: 12px;
+  }
+}

@@ -1,0 +1,25 @@
+@use "@app/styles/_mixins" as *;
+
+.weather-cards-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+
+  .weather-card-item {
+    width: 182px;
+    height: 118px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--c-neutral-300);
+
+    .weather-card-item-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .weather-card-item-info {
+      font-size: 16px;
+      color: var(--c-neutral-0);
+    }
+  }
+}

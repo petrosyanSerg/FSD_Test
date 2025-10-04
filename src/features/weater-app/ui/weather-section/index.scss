@@ -1,0 +1,14 @@
+@use "@app/styles/_mixins" as *;
+
+.weather-section {
+  .weather-section-content {
+    display: flex;
+    gap: 32px;
+    color: var(--color-text-light);
+  }
+
+  .weather-section-text {
+    font-size: 16px;
+    margin-block: 16px;
+  }
+}

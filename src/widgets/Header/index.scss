@@ -1,0 +1,6 @@
+@use "@app/styles/_mixins" as *;
+
+.app-header {
+  margin: 16px;
+  @include flex(row, space-between, center);
+}

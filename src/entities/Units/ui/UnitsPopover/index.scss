@@ -1,0 +1,6 @@
+@use "@app/styles/_mixins" as *;
+
+.units-popover-button {
+  @include flex();
+  gap: 12px;
+}

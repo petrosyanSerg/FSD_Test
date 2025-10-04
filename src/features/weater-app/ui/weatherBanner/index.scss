@@ -1,0 +1,50 @@
+@use "@app/styles/_mixins" as *;
+
+.weather-banner {
+  position: relative;
+  min-height: 286px;
+  width: 800px;
+  padding: 24px;
+  @include flex();
+
+  .weather-banner-content {
+    @include flex(row, space-between, center);
+    width: 100%;
+  }
+
+  .weather-banner-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .weather-banner-city {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .weather-banner-city-name {
+      font-size: 36px;
+      color: var(--c-neutral-200);
+      font-weight: bold;
+    }
+
+    .weather-banner-city-date {
+      font-size: 18px;
+      color: var(--c-neutral-300);
+      font-weight: 500;
+    }
+  }
+
+  .weather-banner-info {
+    display: flex;
+    gap: 8px;
+
+    .weather-banner-info-temperature {
+      font-size: 96px;
+      font-style: italic;
+      color: var(--c-neutral-200);
+    }
+  }
+}

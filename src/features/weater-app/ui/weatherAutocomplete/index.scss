@@ -1,0 +1,7 @@
+@use "@app/styles/_mixins" as *;
+
+.weather-autocomplete {
+  @include flex();
+  gap: 16px;
+  margin-block: 32px;
+}

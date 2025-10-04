@@ -1,0 +1,25 @@
+@use "@app/styles/_mixins" as *;
+
+.weather-weekly-cards-list {
+  display: flex;
+  gap: 16px;
+
+  .weather-weekly-card-item {
+    @include flex(column, space-between);
+    width: 100px;
+    height: 165px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: var(--c-neutral-300);
+    opacity: 0.9;
+    backdrop-filter: blur(8px);
+
+    .weather-weekly-card-item-day {
+    }
+
+    .weather-weekly-card-item-temperature {
+      @include flex(row, space-between, center);
+      width: 100%;
+    }
+  }
+}
